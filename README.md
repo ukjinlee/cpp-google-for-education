@@ -1,2 +1,2 @@
-# cpp-google-for-education
-solutions to C++ course in Google for Education
+# C++ course in Google for Education
+https://developers.google.com/edu/c++
