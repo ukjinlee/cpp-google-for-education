@@ -17,6 +17,7 @@ class Time {
         return;
     }
     void increment();
+    void decrement();
     void display();
 };
 
@@ -27,7 +28,20 @@ void Time::increment() {
     seconds_ %= 60;
     minutes_ %= 60;
     hours_ %= 24;
-    return;
+}
+
+void Time::decrement() {
+    seconds_--;
+    if (seconds_ >= 0) 
+        return;    
+    seconds_ = 59;
+    minutes_--;
+    if (minutes_ >= 0)
+        return;
+    minutes_ = 59;
+    hours_--;
+    if (hours_ < 0)
+        hours_ = 23;
 }
 
 void Time::display() {
@@ -42,6 +56,11 @@ int main() {
     timer.set(23, 59, 58);
     for (int i = 0; i < 5; i++) {
         timer.increment();
+        timer.display();
+        cout << endl;
+    }
+    for (int i = 0; i < 5; i++) {
+        timer.decrement();
         timer.display();
         cout << endl;
     }
