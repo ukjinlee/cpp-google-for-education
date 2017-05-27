@@ -1,5 +1,8 @@
+#ifndef DATABASE_H
+#define DATABASE_H
+
 #include  <iostream>
-#include "Composer.h"
+#include "composer.h"
 
 // Our database holds 100 composers, and no more.
 const int kMaxComposers = 100;
@@ -28,3 +31,5 @@ class Database {
   // Track the next slot in the array to place a new record.
   int next_slot_;
 };
+
+#endif

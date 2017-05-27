@@ -1,3 +1,6 @@
+#ifndef COMPOSER_H
+#define COMPOSER_H
+
 #include <string>
 
 using namespace std;
@@ -48,3 +51,5 @@ class Composer {
   string fact_;
   int ranking_;
 };
+
+#endif

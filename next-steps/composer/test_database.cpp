@@ -1,6 +1,6 @@
 // Description: Test driver for a database of Composer records.
 #include <iostream>
-#include "Database.h"
+#include "database.h"
 using namespace std;
 
 int main() {
@@ -23,4 +23,7 @@ int main() {
 
   cout << endl << "all Composers: " << endl << endl;
   myDB.DisplayAll();
+
+  cout << "*************************" << endl;
+  myDB.DisplayByRank();
 }

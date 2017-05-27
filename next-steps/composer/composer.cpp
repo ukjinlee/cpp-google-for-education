@@ -1,7 +1,7 @@
 #include <iostream>
-#include "Composer.h"
+#include "composer.h"
 
-Composer::Composer() : ranking_(kDefaultRanking) {}
+Composer::Composer() : composer_yob_(0), ranking_(kDefaultRanking) {}
 Composer::~Composer() {}
 
 void Composer::set_first_name(string in_first_name) {
